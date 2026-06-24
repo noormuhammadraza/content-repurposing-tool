@@ -64,8 +64,8 @@ generates tailored output for each platform.
 These exist in .env.local (never commit this file):
 
 - NEXT_PUBLIC_SUPABASE_URL
-- NEXT_PUBLIC_SUPABASE_ANON_KEY
-- SUPABASE_SERVICE_ROLE_KEY
+- NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+- SUPABASE_SECRET_KEY
 - OPENAI_API_KEY
 
 ## How to run
