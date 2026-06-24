@@ -23,7 +23,10 @@ generates tailored output for each platform.
 - API routes live at app/api/[route]/route.ts
 - Client components must have 'use client' as the very first line
 - Server components never import from 'use client' files directly
-- lib/supabase.ts exports two functions: createSupabaseBrowserClient and createSupabaseServerClient
+- lib/supabase.ts exports createSupabaseServerClient (server only, uses next/headers)
+- lib/supabase-browser.ts exports createSupabaseBrowserClient (browser/client components only)
+- Always import from lib/supabase-browser.ts in Client Components
+- Always import from lib/supabase.ts in Server Components and API routes
 - lib/openai.ts exports a single named const: openai
 
 ### TypeScript rules
